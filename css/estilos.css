@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Aquí seteo todo a 0*/
+ }
+
+
+.textoPrincipal{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aquamarine; /*Aquí creo una clase con tipografía y alineado para utilizar luego*/
+}
+
+a{color: aquamarine;}
+
+.contenedor {
+  position: relative;
+  text-align: center;
+  color: aquamarine;
+}
+
+.textoSobreImagen {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-family: Ovo-Regular;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+.sticky{
+    position: fixed;
+  top: 20;
+  width: 100%;
+  background-color: #0d01013c; /* Add desired background color */
+  z-index: 100; /* Ensure the header appears above other elements */
+}
+
+/*Aquí creo el formulario y los estilos del mismo*/
+.claseFormulario{
+    font-family: Ovo-Regular;
+    font-size: 20px;
+    color: aquamarine
+}
+
+
+/* Estilo del "input" */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  /* Estilo del botón */
+input[type=submit] {
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Ovo-Regular;
+    font-size: 20px;
+  }
+
+
+.carousel-item{
+  height: 80vh;
+  font-family: Ovo-Regular;
+} /*Aquí defino la altura del carrousel y la tipografía*/
+
+.carousel-item img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} /*Aquí defino el estilo de las imágenes del carrousel*/
+
+@media screen and (max-width:480px) {
+  .carousel-item{
+    height: 60vh;
+    font-family: Ovo-Regular;
+    }
+  .carousel-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  } 
+  .imagenAdaptive{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}/*Aquí defino el estilo de las imágenes del carrousel y de la imagen del main cuando la pantalla tiene un máximo de 480px*/
+
+ul li {
+    padding: 25px;
+}
+
+
+a:visited{
+    text-decoration: none;
+}/*Aquí el código hace que que los links visitados queden de color original y no violeta*/
+
+@font-face {
+    font-family: emilio;
+    src: url(../assets/fonts/emilio.ttf);
+}/*Aquí llamo a la tipografía para luego sourcearla*/
+
+@font-face{
+    font-family: Ovo-Regular;
+    src: url(../assets/fonts/Ovo-Regular.ttf);
+}/*Aquí llamo a la tipografía para luego sourcearla*/
+
+
+.footer-icons {
+    font-family: Ovo-Regular;
+    text-align: center;
+    overflow: hidden;
+  }/*Acá creo las clases para el footer*/
+  
+.footer {
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: aquamarine;
+  }/*Acá creo las clases para el footer*/
+  
+/*Clases para las subscripciones*/
+/*A continuación creo los "botones" de subscripción. Para esto creo un contenedor que a su vez tiene tres otros elementos dentro: el tipo de plan (h2), el text del plan (p), y el botón de seleccionar (button)*/
+
+.subscripcion-container {
+    text-align: center;
+    font-family: Ovo-Regular;
+  }
+  
+  .subscripcion-box {
+    width: 300px;
+    height: 500px;
+    background-color: aquamarine;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .subscripcion-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .subscripcion-box p {
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+ .customCard{
+  height: 800px;
+  width: 250px;
+ }
+
+ .imagenCard{
+  height: 33%;
+  object-fit: scale-down;
+}
+
